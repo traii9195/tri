@@ -1,0 +1,14 @@
+ALGORITHME tri_insertion (tableau)
+// Entrée : un tableau d'éléments à trier
+// Sortie : le tableau trié en ordre croissant
+
+POUR i DE 2 À longueur(tableau) FAIRE
+    k ← tableau[i]
+    j ← i - 1
+    TANT_QUE j ≥ 1 ET tableau[j] > k FAIRE
+        tableau[j + 1] ← tableau[j]
+        j ← j - 1
+    FIN_TANT_QUE
+    tableau[j + 1] ← k
+FIN_POUR
+
